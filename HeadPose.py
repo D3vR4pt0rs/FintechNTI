@@ -1,10 +1,10 @@
 import cognitive_face as CF
 import os
 
-KEY = '189cbe2ce40044a7bd06c149fc00e67b'  # Replace with a valid Subscription Key here.
+KEY = ''  # Replace with a valid Subscription Key here.
 CF.Key.set(KEY)
 
-BASE_URL = 'https://westcentralus.api.cognitive.microsoft.com/face/v1.0'  # Replace with your regional Base URL
+BASE_URL = ''  # Replace with your regional Base URL
 CF.BaseUrl.set(BASE_URL)
 
 position = input()
