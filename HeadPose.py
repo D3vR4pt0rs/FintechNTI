@@ -42,11 +42,11 @@ def roll_right(resultp, i):
         return ''
 
 
-files = os.listdir('G:/Проекты/Fintech.Inview/images')
+files = os.listdir('<Свой путь>')
 
 otvet = ''
 for i in range(0,len(files)):
-    img_url = 'G:/Проекты/Fintech.Inview/images/' + str(i)+'.jpg'
+    img_url = '<Свой путь>' + str(i)+'.jpg'
     result = CF.face.detect(img_url, face_id=False, landmarks=False, attributes="headPose")
     print(result)
     switch_case = {
