@@ -24,14 +24,9 @@ def privToAddr(priv):
 
 print(web3.sha3(text='')+int(uuid, 16).to_bytes(16, 'big')+int(pin_code[0], 16).to_bytes(1, 'big'))
 private=generate_private_key(uuid,pin_code)
-#private = '2cdc6fc375180afbdd78e7541b4eacb03faa70d0d78de162b1625cdef855540d'
-print(private)
 public=privToPub(private)
-print(public)
 addr=pubToAddr(public)
 addrlast="0x"+addr[len(addr)-40:]
-print(addrlast)
-
 
 def getBalance(addr):
     balance=web3.eth.getBalance(Web3.toChecksumAddress(addr))
